@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Berkshire+Swash&family=Monoton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px 300px;
+}
+
+h1 {
+  font-size: 50px;
+  text-shadow: 3px 3px 0px #222, 5px 5px 0px #e53745;
+  color: #4cce0077;
+  font-family: "Berkshire Swash", serif;
+  text-align: center;
+}
+
+.accordion {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 25px;
+  font-weight: 800;
+  margin: 10px 0px;
+  background-color: rgb(59, 9, 9);
+  color: white;
+  font-family: "Abril Fatface", serif;
+}
+.content-box {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 980px) {
+  .content-box {
+    font-size: 12px;
+  }
+
+  body {
+    margin: 0px 150px;
+  }
+
+  .list {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0px 50px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+}
