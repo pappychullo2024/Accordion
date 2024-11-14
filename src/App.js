@@ -63,11 +63,12 @@ function AccordionItems({ title, num, curOpen, onOpen, children }) {
   return (
     <div onClick={handleisOpen}>
       <div className="list">
-        <p className="number">{num < 9 ? `0${num + 1}` : num + 1}</p>
-        <p className="title">{title}</p>
-        <p className="icon">{isOpen ? "-" : "+"}</p>
+        <p>{num < 9 ? `0${num + 1}` : num + 1}</p>
+        <p>{title}</p>
+        <p>{isOpen ? "-" : "+"}</p>
       </div>
       {isOpen && <div className="content-box">{children}</div>}
     </div>
   );
 }
+
